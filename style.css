@@ -1,9 +1,7 @@
 /* General */
 :root {
-    --bg-grey1: #1d1c1c;
-    --bg-grey2: #292929;
-    --primary-bg: var(--bg-grey1);
-    --primary-bg2: var(--bg-grey2);
+    --primary-bg: #1d1c1c;
+    --text-grey: #aaa;
     --color-cta: #8886f7;
     --color-pills: rgb(255, 0, 247);
 }
@@ -18,7 +16,7 @@ html {
   }
   
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--primary-bg);
     color: #fff;
@@ -26,7 +24,6 @@ body {
 
 p {
     padding: 5px 0;
-    font-size: 1.2rem;
 }
 
 a {
@@ -46,15 +43,15 @@ li {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 /* Header */
 h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-transform: lowercase;
 }
 
@@ -73,17 +70,18 @@ h1 {
 
 /* Main */
 h2 {
+    letter-spacing: 1.2px;
     font-size: 0.8rem;
     margin: 20px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .section-container {
     padding: 20px 10px;
     margin: 10px;
     border-radius: 5px;
-    background-color: var(--primary-bg2);
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #232526, #2d2e2f); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #232526, #2d2e2f) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -113,6 +111,9 @@ ul {
 } 
 
 /* Main contact */
+.contact {
+    color: var(--text-grey);
+}
 .contact-link {
     margin-left: 10px;
     text-decoration: none;
