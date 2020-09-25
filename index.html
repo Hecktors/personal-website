@@ -1,97 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torsten Heckmann</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <h1>Torsten Heckmann | webdeveloper</h1>
-        <nav class="nav">
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="#biography">Biography</a>
-        </nav>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+    <header class="header">
+      <h1><span class="header-name">Torsten Heckmann </span> | webdeveloper</h1>
+      <nav class="nav">
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#biography">Biography</a>
+      </nav>
     </header>
-    <main>
-        <section>
-            <img src="./img/ich.jpeg" alt="Torsten Heckmann">
-            <div class="section-container">
-                <p>Hi, ich bin Torsten, Webentwickler. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, modi?</p>
-
-            </div>
-            <div class="section-container skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div class="section-container tools">
-                <h3>Tools</h3>
-                <ul>
-                    <li>VS Code</li>
-                    <li>Git</li>
-                    <li>Slack</li>
-                    <li>Vim</li>
-                </ul>
-            </div>
+      <section class="section section-intro">
+      <main>
+          <div class="intro-img-container">
+            <img class="intro-img" src="./img/ich.jpeg" alt="Torsten Heckmann" />
+          </div>
+          <div class="section-container">
+            <p>
+              Hi, ich bin Torsten, Webentwickler. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur, modi?
+            </p>
+          </div>
+          <div class="section-container skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="section-container tools">
+            <h3>Tools</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>Slack</li>
+              <li>Vim</li>
+            </ul>
+          </div>
         </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <div class="section-container">
-                <div>
-                    Call me! 
-                    <a class="contact-link" href="tel:+4915776833996">+4915776833996</a>
-                </div>
-                <div>
-                   Mail me!
-                    <a class="contact-link" href="mailto:tohe.webdev@gmail.com">tohe.webdev@gmail.com</a>
-                </div>
-                <a class="logo-link" href="https://github.com/Hecktors">
-                    <div class="logo-link-container">
-                        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" target="_blank" alt="Screenshot of my GitHub account">
-                    </div>
-                </a>
-                <a class="logo-link" href="https://codepen.io/dashboard/">
-                    <div class="logo-link-container">
-                        <img class="logo-img"  src="https://i1.wp.com/blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png?resize=125%2C125&ssl=1" target="_blank" alt="Screenshot of my Codepen account">
-                    </div>
-                </a>
-                <a class="logo-link" href="https://de.linkedin.com/">
-                    <div class="logo-link-container">
-                        <img class="logo-img"  src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg" target="_blank" alt="Screenshot of my LinkedIn account">
-                    </div>
-                </a>
+        <section id="contact" class="section section-contact">
+          <h2>Contact</h2>
+          <div class="section-container">
+            <div class="contact-header">
+              phone: 
+              <a class="contact-link" href="tel:+4915776833996"
+                >+4915776833996</a
+              >
             </div>
-            </section>
-            <section id="biography" class="biography">
-            <h2>Biography</h2>
-            <div class="section-container">
-                <p>Hier erzähle ich etwas über mich, und später vielleicht ein wenig mehr</p>
-                <ul>
-                    <li>seit 09/20 <span class="position">Bootcamp Webdeveloper</span>
-                        <br/>
-                        <span class="company">neue Fische</span>
-                    </li>
-                    <li>09/19–08/20 <span class="position">something</span>
-                        <br/>
-                        <span class="company">somewhere</span>
-                    </li>
+            <div>
+              mail: 
+              <a class="contact-link" href="mailto:tohe.webdev@gmail.com"
+                >tohe.webdev@gmail.com</a
+              >
+            </div>
+            <div class="social-container">
+              <a class="social-link" href="https://github.com/Hecktors" target="_blank">
+                <img
+                  class="social-img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+                  alt=""
+                />
+              </a>
+              <a class="social-link" href="https://codepen.io/dashboard/" target="_blank">
+                <img
+                  class="social-img"
+                  src="https://i1.wp.com/blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png?resize=125%2C125&ssl=1"
+                  alt=""
+                />
+              </a>
+              <a class="social-link" href="https://de.linkedin.com/" target="_blank">
+                <img
+                  class="social-img"
+                  src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="biography" class="section section-bio">
+          <h2>Biography</h2>
+          <div class="section-container">
+            <p class="bio-description">
+              Hier erzähle ich etwas über mich, und später vielleicht ein wenig
+              mehr
+            </p>
+            <ul>
+              <li class="job">
+                <div class="job-firstline">
+                  <span class="job-period">seit 09/20</span>
+                  <span class="job-position">Bootcamp Webdeveloper</span>
+                </div>
+                <div class="job-company">neue Fische</div>
+              </li>
 
-                        <li>02/15–08/19 <span class="position">something</span>
-                            <br/>
-                            <span class="company">somewhere</span>
-                    </li>
+              <li class="job">
+                <div class="job-firstline">
+                  <span class="job-period">09/19–08/20</span>
+                  <span class="job-position">something</span>
+                </div>
+                <div class="job-company">somewhere</div>
+              </li>
 
-                        </ul>
-        </div>
-            </section>
-        </main>
-
-</body>
+              <li class="job">
+                <div class="job-firstline">
+                  <span class="job-period">02/15–08/19</span>
+                  <span class="job-position">something</span>
+                </div>
+                <div class="job-company">somewhere</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
