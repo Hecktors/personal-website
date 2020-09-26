@@ -1,4 +1,4 @@
-/********** General  **********/
+/********** GENERAL  **********/
 :root {
   --primary-bg: #1d1c1c;
   --text-grey: #aaa;
@@ -56,7 +56,7 @@ h1 {
   font-weight: lighter;
   font-size: 1rem;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   letter-spacing: 1.5px;
   text-transform: lowercase;
 }
@@ -78,11 +78,30 @@ h3 {
 }
 
 .body-container {
-  max-width: 600px;
+  max-width: 750px;
   margin: auto;
 }
 
-/**********  Header **********/
+@media (min-width: 600px) {
+  body {
+    background: #131415; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #131415,
+      #222425
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #131415,
+      #222425
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/**********  HEADER **********/
 .header-name {
   color: #999;
 }
@@ -101,7 +120,22 @@ h3 {
   color: var(--color-cta);
 }
 
-/**********  Main **********/
+@media (min-width: 600px) {
+  .nav {
+    justify-content: center;
+    margin: 50px 10px;
+  }
+
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .nav-link {
+    margin: 20px;
+  }
+}
+
+/**********  MAIN **********/
 .section-container {
   padding: 15px 10px;
   margin: 10px;
@@ -118,12 +152,22 @@ h3 {
     #2d2e2f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+@media (min-width: 600px) {
+  .section-container {
+    background: none;
+  }
+}
 
-/********** Intro **********/
+/********** SECTION INTRO **********/
 .intro-img {
   display: block;
   margin: auto;
 }
+
+.skills {
+  margin-top: 40px;
+}
+
 .skills li,
 .tools li {
   display: inline-block;
@@ -136,14 +180,92 @@ h3 {
   padding: 5px 15px;
 }
 
-/********** Contact **********/
+@media (min-width: 600px) {
+  .intro-img-container {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .intro-img {
+    max-width: none;
+    width: 300px;
+  }
+}
+
+/********** SECTION PROJECTS **********/
+.projects-container {
+  margin: 50px auto;
+  max-width: 750px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
+}
+
+.projects-container > div {
+  background: teal;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.project-img-container {
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-out;
+}
+
+.project-img:hover {
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+
+@media (min-width: 490px) {
+  .projects-container {
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-auto-rows: 160px; */
+  }
+  .vertical-md {
+    grid-row: span 2;
+  }
+}
+
+/********** SECTION CONTACT **********/
 .section-contact {
   color: var(--text-grey);
 }
 
+.contact-container {
+  display: flex;
+}
+
 .contact-header {
+  height: 30px;
   margin-bottom: 10px;
 }
+
+.contact-row {
+  margin-bottom: 20px;
+}
+
 .contact-link {
   margin-left: 10px;
   padding: 5px;
@@ -170,7 +292,35 @@ h3 {
   width: 10%;
 }
 
-/********** Bio **********/
+@media (min-width: 600px) {
+  .social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .social-link {
+    margin: 0;
+    margin-right: 20px;
+    border-radius: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .social-link:hover {
+    transform: translateY(-3px);
+  }
+
+  .social-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/********** SECTION BIO **********/
 .bio p {
   padding: 0;
   margin-bottom: 20px;
@@ -201,80 +351,7 @@ h3 {
   color: var(--text-grey);
 }
 
-/********** Media queries **********/
-
 @media (min-width: 600px) {
-  body {
-    background: #131415; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #131415,
-      #222425
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #131415,
-      #222425
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .nav {
-    justify-content: center;
-    margin: 50px 10px;
-  }
-
-  .section {
-    margin-bottom: 100px;
-  }
-
-  .nav-link {
-    margin: 20px;
-  }
-
-  .intro-img-container {
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  .intro-img {
-    max-width: none;
-    width: 300px;
-  }
-  .section-container {
-    background: none;
-  }
-
-  .social-container {
-    margin: 30px 0;
-    display: flex;
-  }
-
-  .social-link {
-    margin: 0;
-    margin-right: 20px;
-    border-radius: 100%;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    transition: 0.2s;
-  }
-
-  .social-link:hover {
-    transform: translateY(-3px);
-  }
-
-  .social-img {
-    width: 50px;
-    height: 50px;
-  }
-
   .bio-description {
     margin-bottom: 70px;
   }

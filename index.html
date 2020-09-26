@@ -12,21 +12,32 @@
       href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="body-container">
-    <header class="header">
-      <h1><span class="header-name">Torsten Heckmann </span> | webdeveloper</h1>
-      <nav class="nav">
-        <a class="nav-link" href="#contact">Contact</a>
-        <a class="nav-link" href="#biography">Biography</a>
-      </nav>
-    </header>
-      <section class="section section-intro">
+      <!-- HEADER -->
+      <header class="header">
+        <h1>
+          <span class="header-name">Torsten Heckmann </span> | webdeveloper
+        </h1>
+        <nav class="nav">
+          <a class="nav-link" href="#projects"></a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#biography">Biography</a>
+        </nav>
+      </header>
+
       <main>
+        <!-- SECTION INTRO -->
+        <section class="section section-intro">
           <div class="intro-img-container">
-            <img class="intro-img" src="./img/ich.jpeg" alt="Torsten Heckmann" />
+            <img
+              class="intro-img"
+              src="./img/ich.jpeg"
+              alt="Torsten Heckmann"
+            />
           </div>
           <div class="section-container">
             <p>
@@ -53,46 +64,121 @@
             </ul>
           </div>
         </section>
-        <section id="contact" class="section section-contact">
-          <h2>Contact</h2>
-          <div class="section-container">
-            <div class="contact-header">
-              phone: 
-              <a class="contact-link" href="tel:+4915776833996"
-                >+4915776833996</a
-              >
+
+        <!-- SECTION PROJECTS -->
+        <section id="projects" class="section-projects">
+          <h2>Projects</h2>
+          <div class="projects-container">
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="https://live.staticflickr.com/3160/2609243310_23174e4aa6.jpg"
+                alt=""
+              />
             </div>
-            <div>
-              mail: 
-              <a class="contact-link" href="mailto:tohe.webdev@gmail.com"
-                >tohe.webdev@gmail.com</a
-              >
+            <div class="vertical project-img-container">
+              <img
+                class="project-img"
+                src="https://live.staticflickr.com/2518/4043600350_03764a3a06_b.jpg"
+                alt=""
+              />
             </div>
-            <div class="social-container">
-              <a class="social-link" href="https://github.com/Hecktors" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
-                  alt=""
-                />
-              </a>
-              <a class="social-link" href="https://codepen.io/dashboard/" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://i1.wp.com/blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png?resize=125%2C125&ssl=1"
-                  alt=""
-                />
-              </a>
-              <a class="social-link" href="https://de.linkedin.com/" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg"
-                  alt=""
-                />
-              </a>
+            <div class="horizontal project-img-container">
+              <img
+                class="project-img"
+                src="https://images.unsplash.com/photo-1586821333472-9850497197c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2783&q=80"
+                alt=""
+              />
+            </div>
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="https://images.unsplash.com/photo-1581733829333-e4078d1a0694?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                alt=""
+              />
+            </div>
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="https://images.unsplash.com/photo-1538964173425-93884d739596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+            </div>
+            <div class="vertical-md project-img-container">
+              <img
+                class="project-img"
+                src="https://images.unsplash.com/photo-1548704686-f0a484c1bd67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+                alt=""
+              />
             </div>
           </div>
         </section>
+
+        <!-- SECTION CONTACT -->
+        <section id="contact" class="section section-contact">
+          <h2>Contact</h2>
+          <div class="section-container">
+            <div class="contact-container">
+              <div class="contact-header">
+                <div class="contact-row">phone:</div>
+                <div class="contact-row">mail:</div>
+                <div class="contact-row"></div>
+              </div>
+
+              <div class="contact-content">
+                <div class="contact-row">
+                  <a class="contact-link" href="tel:+4915776833996"
+                    >+4915776833996</a
+                  >
+                </div>
+
+                <div class="contact-row">
+                  <a class="contact-link" href="mailto:tohe.webdev@gmail.com"
+                    >tohe.webdev@gmail.com</a
+                  >
+                </div>
+
+                <div class="social-container">
+                  <a
+                    class="social-link"
+                    href="https://github.com/Hecktors"
+                    target="_blank"
+                  >
+                    <img
+                      class="social-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    class="social-link"
+                    href="https://codepen.io/dashboard/"
+                    target="_blank"
+                  >
+                    <img
+                      class="social-img"
+                      src="https://i1.wp.com/blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png?resize=125%2C125&ssl=1"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    class="social-link"
+                    href="https://de.linkedin.com/"
+                    target="_blank"
+                  >
+                    <img
+                      class="social-img"
+                      src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION BIO -->
         <section id="biography" class="section section-bio">
           <h2>Biography</h2>
           <div class="section-container">
