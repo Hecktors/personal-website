@@ -1,6 +1,6 @@
 /********** GENERAL  **********/
 :root {
-  --primary-bg: #1d1c1c;
+  --primary-bg: #141414;
   --text-grey: #aaa;
   --color-cta: #e73cf5;
   --color-pills: #00ff34;
@@ -110,6 +110,17 @@ h3 {
       #222425
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+  body {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.932),
+        rgba(0, 0, 0, 0.973)
+      ),
+      url('./img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 /**********  HEADER **********/
@@ -156,17 +167,11 @@ h3 {
 .section-container {
   padding: 15px 10px;
   border-radius: 5px;
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #232526,
-    #2d2e2f
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #232526,
-    #2d2e2f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    rgba(35, 37, 38, 0.5),
+    rgba(45, 46, 47, 0.5)
+  );
 }
 
 .section-header {
