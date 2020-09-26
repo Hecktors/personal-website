@@ -181,7 +181,7 @@ h3 {
   padding: 0 10px;
   border-radius: 5px;
   transform: translateY(-7px);
-  color: #fff;
+  color: var(--color-cta);
 }
 
 .section-header a:hover {
