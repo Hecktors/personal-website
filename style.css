@@ -171,6 +171,7 @@ h3 {
 
 .section-header {
   position: relative;
+  text-align: center;
 }
 
 .section-header a {
@@ -179,12 +180,13 @@ h3 {
   right: 0;
   padding: 0 10px;
   border-radius: 5px;
-  transform: translateY(-12px);
+  transform: translateY(-7px);
   color: #fff;
 }
 
 .section-header a:hover {
 }
+
 @media (min-width: 600px) {
   .section {
     margin-bottom: 120px;
@@ -194,6 +196,11 @@ h3 {
     margin: 10px;
     padding: 15px 20px;
   }
+
+  .section-header {
+    text-align: rigleftht;
+    margin-left: 30px;
+  }
 }
 
 /********** SECTION INTRO **********/
@@ -201,6 +208,21 @@ h3 {
   display: block;
   margin: auto;
 }
+
+@media (min-width: 600px) {
+  .intro-img-container {
+    width: 300px;
+    margin: 100px auto 50px;
+    box-shadow: 2px 2px 10px 4px rgba(72, 72, 72, 0.3);
+    overflow: hidden;
+  }
+  .intro-img {
+    width: 300px;
+    border-radius: 5px;
+  }
+}
+
+/********** SECTION INTRO **********/
 
 .skills {
   margin-top: 30px;
@@ -223,7 +245,7 @@ h3 {
   position: relative;
   color: var(--color-pills);
   border: 1px solid var(--color-pills);
-  background-color: #000;
+  background-color: #140e3f;
 }
 
 .techno li div,
@@ -293,18 +315,6 @@ h3 {
 }
 
 @media (min-width: 600px) {
-  .intro-img-container {
-    margin: 100px auto;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  .intro-img {
-    max-width: none;
-    width: 300px;
-  }
-
   .skills {
     margin-top: 40px;
   }
@@ -370,7 +380,6 @@ h3 {
 @media (min-width: 730px) {
   .projects-container {
     margin: 20px;
-    padding-top: 25px;
   }
 }
 /********** SECTION BIO **********/
