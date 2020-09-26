@@ -2,22 +2,25 @@
 :root {
   --primary-bg: #1d1c1c;
   --text-grey: #aaa;
-  --color-cta: #8886f7;
   --color-cta: #e73cf5;
-  --color-pills-skills: #00ff34;
-  --bg-color-pills-skills: #084815;
-  --color-pills-tools: #fff;
-  --bg-color-pills-tools: #0000cd;
+  --color-pills: #00ff34;
+  --bg-color-pills: #084815;
 
-  --skill-html: 100%;
-  --skill-css: 100%;
-  --skill-js: 100%;
-  --skill-react: 75%;
-  --skill-bootstrap: 75%;
-  --skill-materialui: 75%;
-  --skill-nodejs: 50%;
-  --skill-mongodb: 50%;
-  --skill-postgresql: 25%;
+  --techno-html: 100%;
+  --techno-css: 100%;
+  --techno-js: 100%;
+  --techno-react: 75%;
+  --techno-bootstrap: 75%;
+  --techno-materialui: 75%;
+  --techno-nodejs: 50%;
+  --techno-mongodb: 50%;
+  --techno-postgresql: 25%;
+  --techno-webpack: 25%;
+
+  --language-german: 100%;
+  --language-english: 100%;
+  --language-spanish: 75%;
+  --language-portugues: 50%;
 }
 
 * {
@@ -39,10 +42,11 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  outline: none;
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 img {
@@ -118,12 +122,13 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
 .nav-link {
   display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
   color: var(--color-cta);
 }
 
@@ -163,6 +168,23 @@ h3 {
     #2d2e2f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.section-header {
+  position: relative;
+}
+
+.section-header a {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  transform: translateY(-12px);
+  color: #fff;
+}
+
+.section-header a:hover {
+}
 @media (min-width: 600px) {
   .section {
     margin-bottom: 120px;
@@ -181,11 +203,12 @@ h3 {
 }
 
 .skills {
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
-.skills li,
-.tools li {
+.techno li,
+.tools li,
+.languages li {
   display: inline-block;
   margin-right: 1px;
   margin-bottom: 5px;
@@ -194,61 +217,79 @@ h3 {
   padding: 3px 15px;
   line-height: 1.5;
 }
-.skills li {
+.techno li,
+.languages li,
+.tools li {
   position: relative;
-  color: var(--color-pills-skills);
-  border: 1px solid var(--color-pills-skills);
+  color: var(--color-pills);
+  border: 1px solid var(--color-pills);
   background-color: #000;
 }
 
-.skills li div {
+.techno li div,
+.languages li div {
   position: relative;
   z-index: 99;
 }
 
-.skills li::before {
+.techno li::before,
+.languages li::before {
   position: absolute;
   z-index: 9;
   content: '';
-  background-color: var(--bg-color-pills-skills);
+  background-color: var(--bg-color-pills);
   top: 0;
   bottom: 0;
   left: 0;
   border-radius: 5px 0 0 5px;
 }
 
-.skills li.html::before {
-  right: calc(102% - var(--skill-html));
+.techno li.html::before {
+  right: calc(102% - var(--techno-html));
 }
-.skills li.css::before {
-  right: calc(102% - var(--skill-css));
+.techno li.css::before {
+  right: calc(102% - var(--techno-css));
 }
-.skills li.js::before {
-  right: calc(102% - var(--skill-js));
+.techno li.js::before {
+  right: calc(102% - var(--techno-js));
 }
-.skills li.react::before {
-  right: calc(102% - var(--skill-react));
+.techno li.react::before {
+  right: calc(102% - var(--techno-react));
 }
-.skills li.bootstrap::before {
-  right: calc(102% - var(--skill-bootstrap));
+.techno li.bootstrap::before {
+  right: calc(102% - var(--techno-bootstrap));
 }
-.skills li.materialui::before {
-  right: calc(102% - var(--skill-materialui));
+.techno li.materialui::before {
+  right: calc(102% - var(--techno-materialui));
 }
-.skills li.nodejs::before {
-  right: calc(102% - var(--skill-nodejs));
+.techno li.nodejs::before {
+  right: calc(102% - var(--techno-nodejs));
 }
-.skills li.mongodb::before {
-  right: calc(102% - var(--skill-mongodb));
+.techno li.mongodb::before {
+  right: calc(102% - var(--techno-mongodb));
 }
-.skills li.postgresql::before {
-  right: calc(102% - var(--skill-postgresql));
+.techno li.postgresql::before {
+  right: calc(102% - var(--techno-postgresql));
+}
+.techno li.webpack::before {
+  right: calc(102% - var(--techno-webpack));
 }
 
 .tools li {
-  border: 1px solid var(--bg-color-pills-tools);
-  color: var(--color-pills-tools);
-  background-color: var(--bg-color-pills-tools);
+  background-color: var(--bg-color-pills);
+}
+
+.languages li.german::before {
+  right: calc(102% - var(--language-german));
+}
+.languages li.english::before {
+  right: calc(102% - var(--language-english));
+}
+.languages li.spanish::before {
+  right: calc(102% - var(--language-spanish));
+}
+.languages li.portugues::before {
+  right: calc(102% - var(--language-portugues));
 }
 
 @media (min-width: 600px) {
@@ -268,6 +309,7 @@ h3 {
     margin-top: 40px;
   }
 }
+
 /********** SECTION PROJECTS **********/
 .projects-container {
   max-width: 730px;
@@ -352,6 +394,7 @@ ul.cv {
 .job-firstline {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
 }
 
 .job-company {
