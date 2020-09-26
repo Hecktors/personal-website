@@ -6,7 +6,8 @@
   --color-cta: #e73cf5;
   --color-pills-skills: #00ff34;
   --bg-color-pills-skills: #084815;
-  --color-pills-tools: #0a4b1a;
+  --color-pills-tools: #fff;
+  --bg-color-pills-tools: #0000cd;
 
   --skill-html: 100%;
   --skill-css: 100%;
@@ -155,39 +156,36 @@ h3 {
     to right,
     #232526,
     #2d2e2f
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #232526,
-      #2d2e2f
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    @media (min-width: 600px) {
-      .section {
-        margin-bottom: 120px;
-      }
-      
-      .section-container {
-        /* margin: 0; */
-        margin: 10px;
-        padding: 15px 20px;
-        /* background: none; */
-      }
-    }
-    
-    /********** SECTION INTRO **********/
-    .intro-img {
-      display: block;
-      margin: auto;
-    }
-    
-    .skills {
-      margin: 30px 0;
-    }
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #232526,
+    #2d2e2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (min-width: 600px) {
+  .section {
+    margin-bottom: 120px;
+  }
+
+  .section-container {
+    margin: 10px;
+    padding: 15px 20px;
+  }
+}
+
+/********** SECTION INTRO **********/
+.intro-img {
+  display: block;
+  margin: auto;
+}
+
+.skills {
+  margin: 30px 0;
+}
 
 .skills li,
 .tools li {
-  position: relative;
   display: inline-block;
   margin-right: 1px;
   margin-bottom: 5px;
@@ -197,17 +195,20 @@ h3 {
   line-height: 1.5;
 }
 .skills li {
+  position: relative;
   color: var(--color-pills-skills);
   border: 1px solid var(--color-pills-skills);
+  background-color: #000;
 }
 
-.tools li {
-  background-color: var(--color-pills-tools);
+.skills li div {
+  position: relative;
+  z-index: 99;
 }
 
 .skills li::before {
   position: absolute;
-  z-index: -1;
+  z-index: 9;
   content: '';
   background-color: var(--bg-color-pills-skills);
   top: 0;
@@ -217,32 +218,39 @@ h3 {
 }
 
 .skills li.html::before {
-  right: calc(100% - var(--skill-html));
+  right: calc(102% - var(--skill-html));
 }
 .skills li.css::before {
-  right: calc(100% - var(--skill-css));
+  right: calc(102% - var(--skill-css));
 }
 .skills li.js::before {
-  right: calc(100% - var(--skill-js));
+  right: calc(102% - var(--skill-js));
 }
 .skills li.react::before {
-  right: calc(100% - var(--skill-react));
+  right: calc(102% - var(--skill-react));
 }
 .skills li.bootstrap::before {
-  right: calc(100% - var(--skill-bootstrap));
+  right: calc(102% - var(--skill-bootstrap));
 }
 .skills li.materialui::before {
-  right: calc(100% - var(--skill-materialui));
+  right: calc(102% - var(--skill-materialui));
 }
 .skills li.nodejs::before {
-  right: calc(100% - var(--skill-nodejs));
+  right: calc(102% - var(--skill-nodejs));
 }
 .skills li.mongodb::before {
-  right: calc(100% - var(--skill-mongodb));
+  right: calc(102% - var(--skill-mongodb));
 }
 .skills li.postgresql::before {
-  right: calc(100% - var(--skill-react));
+  right: calc(102% - var(--skill-postgresql));
 }
+
+.tools li {
+  border: 1px solid var(--bg-color-pills-tools);
+  color: var(--color-pills-tools);
+  background-color: var(--bg-color-pills-tools);
+}
+
 @media (min-width: 600px) {
   .intro-img-container {
     margin: 100px auto;
@@ -255,14 +263,13 @@ h3 {
     max-width: none;
     width: 300px;
   }
-  
+
   .skills {
     margin-top: 40px;
-}
+  }
 }
 /********** SECTION PROJECTS **********/
 .projects-container {
-  /* margin: 50px auto; */
   max-width: 730px;
   display: grid;
   grid-gap: 5px;
@@ -314,18 +321,14 @@ h3 {
 
 @media (min-width: 610px) {
   .projects-container {
-    /* margin: 20px; */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 150px;
-  }
-  .vertical-md {
-    /* grid-row: span 1; */
   }
 }
 @media (min-width: 730px) {
   .projects-container {
     margin: 20px;
-    padding-top: 25px;‚
+    padding-top: 25px;
   }
 }
 /********** SECTION BIO **********/
