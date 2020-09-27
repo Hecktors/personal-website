@@ -82,6 +82,7 @@ li {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -95,10 +96,11 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 1.2px;
-  font-size: 1rem;
   margin: 20px;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
 }
 
 h3 {
@@ -472,12 +474,9 @@ ul.cv {
 }
 
 /********** SECTION CONTACT **********/
-.section-contact {
-  color: var(--secondary-color);
-}
-
 .contact-container {
   display: flex;
+  color: var(--secondary-color);
 }
 
 .contact-header {
