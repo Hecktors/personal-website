@@ -6,10 +6,6 @@
     <title>Torsten Heckmann</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
       rel="stylesheet"
     />
@@ -28,7 +24,7 @@
           <span class="header-name">Torsten Heckmann </span> | webdeveloper
         </h1>
         <nav class="nav">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link mobile-only" href="#skills">Skills</a>
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#biography">Biography</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -36,92 +32,100 @@
       </header>
 
       <main>
-        <!---------- SECTION INTRO ---------->
-        <section class="section section-intro">
-          <div class="intro-img-container">
-            <img
-              class="intro-img"
-              src="./img/ich.jpeg"
-              alt="Torsten Heckmann"
-            />
-          </div>
-          <div class="section-container">
-            <p>
-              Hi, ich bin Torsten, Webentwickler. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Tenetur, modi?
-            </p>
-          </div>
-        </section>
+        <!---------- INTRO AND SKILLS CONTAINER ---------->
+        <div class="intro-skills-container">
+          <!---------- SECTION INTRO ---------->
+          <section class="section section-intro">
+            <div class="intro-img-container">
+              <img
+                class="intro-img"
+                src="./img/ich.jpeg"
+                alt="Torsten Heckmann"
+              />
+            </div>
+            <div class="section-container">
+              <p>
+                Hi, ich bin Torsten, Webentwickler. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, modi?
+              </p>
+            </div>
+          </section>
 
-        <!---------- SECTION SKILLS ---------->
-        <section id="skills" class="section section-skills">
-          <h2 class="section-header">Skills<a href="#">&uarr;</a></h2>
-          <div class="section-container">
-            <div class="skills techno">
-              <h3>Technologies</h3>
-              <ul>
-                <li class="html">
-                  <div>HTML5</div>
-                </li>
-                <li class="css">
-                  <div>CSS</div>
-                </li>
-                <li class="js">
-                  <div>JavaScript</div>
-                </li>
-                <li class="react">
-                  <div>React</div>
-                </li>
-                <li class="bootstrap">
-                  <div>Bootstrap</div>
-                </li>
-                <li class="materialui">
-                  <div>Material-UI</div>
-                </li>
-                <li class="nodejs">
-                  <div>Node.Js</div>
-                </li>
-                <li class="mongodb">
-                  <div>MongoDB</div>
-                </li>
-                <li class="postgresql">
-                  <div>PostgreSQL</div>
-                </li>
-                <li class="webpack">
-                  <div>Webpack</div>
-                </li>
-              </ul>
+          <!---------- SECTION SKILLS ---------->
+          <section id="skills" class="section section-skills">
+            <h2 class="section-header mobile-only">
+              Skills<a href="#">&uarr;</a>
+            </h2>
+            <div class="section-container">
+              <!-- <h2 class="section-header desktop-only">
+                Skills<a class="mobile-only" href="#">&uarr;</a>
+              </h2> -->
+              <div class="skills techno">
+                <h3>Technologies</h3>
+                <ul>
+                  <li class="html">
+                    <div>HTML5</div>
+                  </li>
+                  <li class="css">
+                    <div>CSS</div>
+                  </li>
+                  <li class="js">
+                    <div>JavaScript</div>
+                  </li>
+                  <li class="react">
+                    <div>React</div>
+                  </li>
+                  <li class="bootstrap">
+                    <div>Bootstrap</div>
+                  </li>
+                  <li class="materialui">
+                    <div>Material-UI</div>
+                  </li>
+                  <li class="nodejs">
+                    <div>Node.Js</div>
+                  </li>
+                  <li class="mongodb">
+                    <div>MongoDB</div>
+                  </li>
+                  <li class="postgresql">
+                    <div>PostgreSQL</div>
+                  </li>
+                  <li class="webpack">
+                    <div>Webpack</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills tools">
+                <h3>Tools</h3>
+                <ul>
+                  <li class="vscode">VS Code</li>
+                  <li class="vim">Vim</li>
+                  <li class="git">Git</li>
+                  <li class="slack">Slack</li>
+                  <li class="figme">Figma</li>
+                  <li class="jira">Jira</li>
+                </ul>
+              </div>
+              <div class="skills languages">
+                <h3>Languages</h3>
+                <ul>
+                  <li class="german">
+                    <div>German</div>
+                  </li>
+                  <li class="english">
+                    <div>English</div>
+                  </li>
+                  <li class="spanish">
+                    <div>Spanish</div>
+                  </li>
+                  <li class="portugues">
+                    <div>Portugues</div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="skills tools">
-              <h3>Tools</h3>
-              <ul>
-                <li class="vscode">VS Code</li>
-                <li class="vim">Vim</li>
-                <li class="git">Git</li>
-                <li class="slack">Slack</li>
-                <li class="figme">Figma</li>
-                <li class="jira">Jira</li>
-              </ul>
-            </div>
-            <div class="skills languages">
-              <h3>Languages</h3>
-              <ul>
-                <li class="german">
-                  <div>German</div>
-                </li>
-                <li class="english">
-                  <div>English</div>
-                </li>
-                <li class="spanish">
-                  <div>Spanish</div>
-                </li>
-                <li class="portugues">
-                  <div>Portugues</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <!---------- SECTION PROJECTS ---------->
         <section id="projects" class="section section-projects">

@@ -52,9 +52,8 @@ html {
 
 body {
   font-size: 112.5%;
-  font-family: 'Courier Prime', monospace;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Inter', sans-serif;
+  font-family: 'Courier Prime', monospace;
   background-color: var(--primary-bg-color);
   color: var(--primary-color);
 }
@@ -99,7 +98,6 @@ h2 {
   letter-spacing: 1.2px;
   font-size: 1rem;
   margin: 20px;
-  /* text-transform: uppercase; */
   margin-bottom: 20px;
 }
 
@@ -115,6 +113,10 @@ h3 {
   margin: auto;
 }
 
+.desktop-only {
+  display: none;
+}
+
 @media (min-width: 600px) {
   body {
     background: var(--primary-bg-color); /* fallback for old browsers */
@@ -128,12 +130,21 @@ h3 {
     background-attachment: fixed;
     background-size: cover;
   }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: inline-block;
+  }
 }
 
 /**********  HEADER **********/
 .header {
   margin: 10px;
 }
+
 .header-name {
   color: #999;
 }
@@ -148,7 +159,6 @@ h3 {
 
 .nav-link {
   display: inline-block;
-  /* text-transform: uppercase; */
   font-size: 1rem;
   color: var(--color-cta);
 }
@@ -196,8 +206,14 @@ h3 {
 }
 
 @media (min-width: 600px) {
+  .intro-skills-container {
+    display: flex;
+    gap: 70px;
+    margin: 150px 20px 0;
+  }
+
   .section {
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
 
   .section-container {
@@ -208,6 +224,13 @@ h3 {
       var(--secondary-bg-color-trans),
       var(--secondary-bg-color-trans)
     );
+  }
+
+  .section-intro .section-container,
+  .section-skills .section-container {
+    background: none;
+    margin: 0;
+    padding: 0;
   }
 
   .section-header {
@@ -225,12 +248,13 @@ h3 {
 @media (min-width: 600px) {
   .intro-img-container {
     width: 300px;
-    margin: 100px auto 50px;
+    width: 100%;
+    margin: 0px auto 30px;
     box-shadow: 2px 2px 10px 4px rgba(72, 72, 72, 0.3);
     overflow: hidden;
   }
   .intro-img {
-    width: 300px;
+    width: 100%;
     border-radius: 5px;
   }
 }
@@ -306,11 +330,9 @@ h3 {
 .techno li.webpack::before {
   right: calc(102% - var(--techno-webpack));
 }
-
 .tools li {
   background-color: var(--bg-color-pills);
 }
-
 .languages li.german::before {
   right: calc(102% - var(--language-german));
 }
@@ -327,6 +349,13 @@ h3 {
 @media (min-width: 600px) {
   .skills {
     margin-top: 40px;
+  }
+
+  .skills.techno {
+    margin-top: 0;
+  }
+  .section-skills h2 {
+    margin: 0;
   }
 }
 
