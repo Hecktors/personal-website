@@ -203,7 +203,8 @@ h3 {
   right: 0;
   padding: 0 10px;
   border-radius: 5px;
-  transform: translateY(-7px);
+  font-size: 2rem;
+  transform: translateY(-16px);
   color: var(--color-cta);
 }
 
