@@ -1,17 +1,5 @@
 /********** GENERAL  **********/
 :root {
-  /* LIGHT THEME */
-  --primary-bg-color: rgba(255, 255, 255, 0.95);
-  --primary-bg-color: #fff;
-  --secondary-bg-color: #f8f8f8;
-  --secondary-bg-color-trans: rgba(245, 245, 245, 0.6);
-  --primary-color: #212121;
-  --secondary-color: #666;
-  --color-pills: #00ff34;
-  --bg-color-pills: #084815;
-  --bg-color-pills-empty: #0aa42a;
-  --color-cta: #ec4ae9;
-
   /* DARK THEME */
   --primary-bg-color: #141414;
   --primary-bg-color: rgba(0, 0, 0, 0.95);
@@ -23,6 +11,18 @@
   --bg-color-pills: #084815;
   --bg-color-pills-empty: #09061b;
   --color-cta: #e73cf5;
+
+  /* LIGHT THEME */
+  /* --primary-bg-color: #fff;
+  --primary-bg-color: rgba(255, 255, 255, 0.95);
+  --secondary-bg-color: #f8f8f8;
+  --secondary-bg-color-trans: rgba(245, 245, 245, 0.6);
+  --primary-color: #212121;
+  --secondary-color: #666;
+  --color-pills: #00ff34;
+  --bg-color-pills: #084815;
+  --bg-color-pills-empty: #0aa42a;
+  --color-cta: #ec4ae9; */
 
   /* SKILL STATUS */
   --techno-html: 100%;
