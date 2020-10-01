@@ -189,7 +189,7 @@ h3 {
 .section-container {
   padding: 15px 10px;
   border-radius: 5px;
-  background-color: var(--secondary-bg-color);
+  /* background-color: var(--secondary-bg-color); */
 }
 
 .section-header {
@@ -221,11 +221,11 @@ h3 {
   .section-container {
     margin: 10px;
     padding: 15px 20px;
-    background: linear-gradient(
+    /* background: linear-gradient(
       to right,
       var(--secondary-bg-color-trans),
       var(--secondary-bg-color-trans)
-    );
+    ); */
   }
 
   .section-intro .section-container,
@@ -268,7 +268,7 @@ h3 {
 /********** SECTION INTRO **********/
 
 .skills {
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .techno li,
@@ -354,7 +354,7 @@ h3 {
 
 @media (min-width: 600px) {
   .skills {
-    margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .skills.techno {
